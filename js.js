@@ -23,11 +23,15 @@ anime({
   { value: -20, duration: 13200 },
   { value: 0, duration: 13200 }
  ],
+ scale: [
+  { value: 1.1, duration: 13200 },
+  { value: 1, duration: 13200 }
+ ],
  loop: true
 });
 
-anime({
- targets: "button",
- opacity: [{ value: 0 }, { value: 1, duration: 6000 }],
- translateY: [{ value: 10 }, { value: 0, duration: 6000 }]
-});
+// anime({
+//  targets: "button",
+//  opacity: [{ value: 0 }, { value: 1, duration: 6000 }],
+//  translateY: [{ value: 10 }, { value: 0, duration: 6000 }]
+// });

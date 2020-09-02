@@ -4,17 +4,40 @@
  font-family: Roboto;
 }
 
+.head {
+ background: linear-gradient(
+  180deg,
+  rgba(227, 235, 255, 1) 0%,
+  rgba(255, 255, 255, 1) 100%
+ );
+}
+
 nav {
  display: flex;
  justify-content: space-between;
- align-items: center;
- padding: 10px;
- background-color: aliceblue;
- ul {
-  display: flex;
-  list-style: none;
-  li {
-   padding: 1rem;
+ .links {
+  ul {
+   list-style-type: none;
+   display: flex;
+
+   li {
+    margin-left: 50px;
+    &:hover ul {
+     display: block;
+     position: absolute;
+    }
+    &:hover {
+     color: red;
+    }
+   }
+   ul {
+    display: none;
+    li {
+     font-size: 0.9rem;
+     padding-top: 15px;
+     margin: 0;
+    }
+   }
   }
  }
 }
