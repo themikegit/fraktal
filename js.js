@@ -1,34 +1,38 @@
-$(document).ready(function() {
- $("button").click(function() {
-  alert("hello");
- });
+$(document).ready(function () {
+	$("button").click(function () {
+		alert("hello");
+	});
+	$("#nav-icon").click(function () {
+		$(this).toggleClass("open");
+		$(".mobile-panel").toggleClass("open-panel");
+	});
 });
-//typed.js
+//typed.js;
 let typed = new Typed(".type", {
- strings: ["very predictive", "new now with us"],
- typeSpeed: 40,
- backSpeed: 20,
- autoInsertCss: true,
- loop: true
+	strings: ["low fee", "UX optimised", "cross chain"],
+	typeSpeed: 40,
+	backSpeed: 20,
+	autoInsertCss: true,
+	loop: true,
 });
 
 //anime.js
-anime({
- targets: "div.graphic",
- translateY: [
-  { value: 20, duration: 13200 },
-  { value: 0, duration: 11200 }
- ],
- translateX: [
-  { value: -20, duration: 13200 },
-  { value: 0, duration: 13200 }
- ],
- scale: [
-  { value: 1.1, duration: 13200 },
-  { value: 1, duration: 13200 }
- ],
- loop: true
-});
+// anime({
+// 	targets: "div.graphic",
+// 	translateY: [
+// 		{ value: 20, duration: 13200 },
+// 		{ value: 0, duration: 11200 },
+// 	],
+// 	translateX: [
+// 		{ value: -20, duration: 13200 },
+// 		{ value: 0, duration: 13200 },
+// 	],
+// 	scale: [
+// 		{ value: 1.1, duration: 13200 },
+// 		{ value: 1, duration: 13200 },
+// 	],
+// 	loop: true,
+// });
 
 // anime({
 //  targets: "button",
