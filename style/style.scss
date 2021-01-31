@@ -235,6 +235,7 @@ hero {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	padding: 10% 10% 2%;
+	height: 85vh;
 
 	.graphic {
 		display: flex;
