@@ -235,7 +235,7 @@ hero {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	padding: 10% 10% 2%;
-	height: 85vh;
+     height: 85vh;
 
 	.graphic {
 		display: flex;
@@ -290,7 +290,7 @@ hero {
 intro {
 	@include section;
 	background-color: $lightBlue;
-	padding: 10%;
+
 	.text {
 		display: flex;
 		padding-left: 15px;
@@ -303,21 +303,7 @@ intro {
 			color: $blue;
 		}
 	}
-	.defi {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
-		margin-bottom: 10%;
-		.animaImgBottom {
-			position: relative;
-			img {
-				position: absolute;
-				left: 20%;
-				bottom: -20%;
-				width: 60%;
-			}
-		}
-	}
+	
 	.fraktal {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -325,7 +311,7 @@ intro {
 			position: relative;
 			img {
 				position: absolute;
-				top: -10%;
+				top: -40%;
 				left: 20%;
 				width: 60%;
 			}
